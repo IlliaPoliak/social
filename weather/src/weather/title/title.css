@@ -1,0 +1,27 @@
+.title {
+	height: 55vh;
+	background: url("./../img/bg.jpg") center center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #000;
+}
+
+.shadow-img{
+	box-shadow: inset 0 0 400px 400px rgba(0,0,0,.5);
+	width: 480px;
+	height: 55vh;
+  }
+
+.app-title {
+	font-size: 3em;
+	color: #fff;
+}
+
+.about-app {
+	font-size: 1em;
+	color: #fff;
+}
