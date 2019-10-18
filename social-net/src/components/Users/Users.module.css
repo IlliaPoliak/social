@@ -1,0 +1,50 @@
+.users_title{
+    text-align: center;
+}
+
+.pagination_wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.users_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user{
+    background-color: rgb(255, 250, 215);
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+}
+
+.avatar_wrapper{
+    width: 100px;
+    height: 100px;
+    flex: 0 1 auto;
+}
+
+.avatar{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.info_wrapper{
+    padding: 0 20px;
+    flex: 1 1 auto;
+}
+
+.user_name{
+    background-color: rgb(222, 255, 177);
+}
+
+.btn_wrapper{
+    flex: 0 1 auto;
+
+}

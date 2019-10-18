@@ -1,0 +1,40 @@
+.profile{
+  display: flex;
+  margin: 20px 0;
+  border: 1px solid burlywood;
+}
+
+.avatar_wrapper{
+  width: 200px;
+  height: auto;
+  min-height: 100px;
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.avatar{
+  width: 100%;
+  height: auto;
+
+}
+
+.profile_info{
+  font-size: 20px;
+  color: cornflowerblue;
+  margin-left: 20px;
+}
+
+span.status{
+  padding: 0 10px;
+  background-color: rgb(255, 217, 128);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+span.status:hover{
+  background-color: rgb(255, 157, 45);
+}
+
+.contacts{
+  margin-top: 20px;
+}
