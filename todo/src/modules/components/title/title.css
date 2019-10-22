@@ -1,0 +1,7 @@
+.title{
+    text-align: center;
+    color: rgb(82, 82, 82);
+    flex: 0 1 auto;
+    font-size: 30px;
+    font-style: italic;
+}

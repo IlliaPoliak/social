@@ -1,0 +1,79 @@
+.todo-task{
+    list-style-type: none;
+    display: flex;
+    background-color: rgb(147, 215, 255);
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.todo-task:hover{
+    cursor: pointer;
+}
+
+.completed.todo-task{
+    background-color: rgb(200, 255, 133);
+}
+
+/********************* checkbox ***************/
+
+.todo-task .check-task{
+    flex: 0 1 auto;
+    margin-top: 6px;
+    display: none;
+}
+
+.todo-task .check-task:hover{
+    cursor: pointer;
+}
+
+/*************** task text ****************/
+
+.todo-task .task-text{
+    text-align: start;
+    flex: 1 1 auto;
+    position: relative;
+    margin-left: 10px;
+}
+
+.todo-task .edit-task{
+    margin-right: 10px;
+    display: none;
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+
+.todo-task:hover .edit-task{
+    display: block;
+}
+
+.todo-task:hover .edit-task:hover{
+    color: rgb(255, 0, 0);
+}
+
+.todo-task .task-completed{
+    text-decoration: line-through;
+}
+
+/**************** close btn ****************/
+
+.todo-task .close-task{
+    align-self: flex-end;
+    flex: 0 1 auto;
+    color: rgb(171, 0, 0);
+    width: 20px;
+    height: 20px;
+    transition: all 0.4s ease;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+}
+
+.todo-task .close-task:hover{
+    cursor: pointer;  
+    color: coral;
+}
