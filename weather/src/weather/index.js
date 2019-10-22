@@ -1,13 +1,11 @@
 import React from 'react';
 import Title from './title/title';
 import Input from './input/input';
-
-
 import './style.css';
 
 const API_KEY = '2852372ee74f14a8e216bd6ac515418d';
 
-class App extends React.Component {
+class Weather extends React.Component {
 
 	state = {
 		temp: undefined,
@@ -31,18 +29,15 @@ class App extends React.Component {
 
 				let sunset = data.sys.sunset;
 				let sunrise = data.sys.sunrise;
-				var sunset_date = new Date(sunset * 1000);
-				var sunrise_date = new Date(sunrise * 1000);
-
-				let sunset_d = sunset_date.toLocaleTimeString()
-				let sunrise_d = sunrise_date.toLocaleTimeString()
+				let sunset_date = new Date(sunset * 1000).toLocaleTimeString()
+				let sunrise_date = new Date(sunrise * 1000).toLocaleTimeString()
 
 				this.setState({
 					temp: data.main.temp,
 					city: data.name,
 					country: data.sys.country,
-					sunrise: sunrise_d,
-					sunset: sunset_d,
+					sunrise: sunrise_date,
+					sunset: sunset_date,
 					wind: data.wind.speed,
 					error: undefined
 				});
@@ -71,16 +66,15 @@ class App extends React.Component {
 	}
 
 	render() {
-		let info = {...this.state};
 		return (
 			<div className='wrapper'>
 				<div className="main">
 					<Title />
-					<Input weatherMethod={this.gettingWeather} info={ info } />
+					<Input getWeather={this.gettingWeather} info={ this.state } />
 				</div>
 			</div>
 		);
 	}
 }
 
-export default App;
+export default Weather;
