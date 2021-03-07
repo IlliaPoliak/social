@@ -1,0 +1,86 @@
+.info{
+    color: white;
+}
+
+.header{
+    grid-area: h;
+    background: url('../../img/congruent_outline.png');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.logo_wrapper{
+    margin: 10px 50px;
+    .logo{
+        width: 100px;
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+}
+
+.login_block a{
+    text-decoration: none;
+}
+
+.auth_data{
+    display: flex;
+    align-items: center;
+
+    a{
+        color: #fff;
+        transition: all .4s ease;
+        &:hover{
+            color: rgb(95, 186, 250);
+            opacity: 0.9;
+        }
+        .data_wrapper{
+            display: flex;
+            align-items: center;
+            background-color: rgba(132, 132, 132, 0.465);
+            border-radius: 10px;
+            padding: 5px 10px;
+
+            .avatar_wrapper{
+                width: 50px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+
+            .login{
+                margin: 0 20px;
+            }
+        }
+    }
+
+    .loguot{
+        background-color: rgba(132, 132, 132, 0.659);
+        color: white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 0 30px;
+        border: none;
+        &:hover{
+            cursor: pointer;
+            background-color: rgba(132, 132, 132, 0.944);
+        }
+    }
+}
+
+.login_btn{
+    background-color: rgba(132, 132, 132, 0.659);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 30px;
+    border: none;
+
+    &:hover{
+        cursor: pointer;
+        background-color: rgba(132, 132, 132, 0.944);
+
+    }
+}

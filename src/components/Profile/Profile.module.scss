@@ -1,0 +1,54 @@
+.profile{
+    grid-area: p;
+    display: flex;
+	flex-direction: column;
+    background-color: rgb(53, 53, 53);
+    color: rgb(112, 191, 255);
+    padding: 20px;
+	font-size: 18px;
+	height: fit-content;
+
+    .main_info{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+		align-items: center;
+		.avatar_wrapper{
+			width: 100px;
+			height: auto;
+			min-height: 100px;
+			max-height: 250px;
+			overflow: hidden;
+		}
+		.info_wrapper{
+			.name{
+				color: yellow;
+				margin: 0 0 10px 0;
+			}
+			.status{
+				font-style: italic;
+				margin-bottom: 50px;
+			}
+		}
+		.arrow{
+			margin: 0 20px;
+			&:hover{
+				cursor: pointer;
+				color: rgb(195, 228, 255);
+			}
+		}
+	}
+	
+    .profile_info{ 
+        .contacts{
+			margin-top: 20px;
+			a{
+				text-decoration: none;
+				color: white;
+				&:hover{
+				color: yellow;
+				}
+			}
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.login_wrapper{
+    margin: 30px;
+}
+
+.remember_me_wrapper{
+   display: flex;
+}
+
+.remember_me_wrapper input{
+    width: 16px;
+ }
+
+.formError{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+.test_data{
+    margin-bottom: 30px;
+    color: rgb(161, 161, 161)
+}

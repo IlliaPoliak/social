@@ -1,0 +1,35 @@
+.formControl{
+    display: flex;
+}
+
+.formControl input,
+.formControl textarea
+{
+    padding: 5px;
+    width: 100%;
+    font-size: 18px;
+    min-height: 50px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.formControl input{
+    min-height: 20px;
+}
+
+.formControl.error input,
+.formControl.error textarea
+{
+    border: 1px solid red
+}
+
+.formControl.error span
+{
+    display: block;
+    color: red;
+}
+
+.formError{
+    border: 1px solid red;
+    color: red
+}

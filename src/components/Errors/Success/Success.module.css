@@ -1,0 +1,16 @@
+.success{
+    position: fixed;
+    top: 50px;
+    left: 40%;
+    right: 40%;
+    background-color: rgb(233, 255, 188);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.success_name{
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}

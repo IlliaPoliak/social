@@ -1,0 +1,38 @@
+.footer{
+    grid-area: f;
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    
+    .more{
+        margin-left: 50px;
+
+        a{
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            &:hover{
+                cursor: pointer;
+            }
+            &:hover img{
+                background-color: rgba(138, 138, 138, 0.514);
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                transition: all .4s ease;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .copy{
+        color: white;
+        margin-right: 50px;
+    }
+    
+}

@@ -1,0 +1,29 @@
+.checkbox_label{
+    display: flex;
+}
+
+.avatar_wrapper{
+    width: 200px;
+    height: auto;
+    min-height: 100px;
+    max-height: 250px;
+    overflow: hidden;
+}
+  
+.label {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: silver;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.label:hover {
+    cursor: pointer;
+}
+
+/* .photo{
+    display: none;
+} */

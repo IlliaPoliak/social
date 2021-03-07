@@ -1,0 +1,19 @@
+.error{
+    padding: 50px;
+}
+
+.title{
+    color: red;
+}
+
+.desc{
+    color: rgb(255, 100, 100);
+}
+
+.error a{
+    text-decoration: none;
+}
+
+.error a:hover{
+    color: brown;
+}
